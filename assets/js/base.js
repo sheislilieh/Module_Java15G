@@ -5,7 +5,7 @@
 	Si a < b sumar a más b
 	si a == b multiplicar ambos numeros
 	Imprimir el resultado en consola
-*/
+
 
 const a = parseInt (prompt ("elige un valor para a"))
 const b = parseInt (prompt ("elige un valor para b"))
@@ -32,3 +32,4 @@ console.log (a,b)
 //    console.log(`${i} x ${j} = ${i*j}`)
 //}
 //}
+*/
