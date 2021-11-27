@@ -1,35 +1,40 @@
-/*
-	Ejercicio 1:
-	Pedir 2 variables por prompt
-	Si a > b dividir a entre b
-	Si a < b sumar a más b
-	si a == b multiplicar ambos numeros
-	Imprimir el resultado en consola
+//let saludo = "hola"
+//for(i=0; i <= saludo.length; i++ ){
+//console.log(saludo[i])
+//}
 
+//  pedir al usuario un string
+//  contar las vocales y las consonantes
+// imprimir en consola
+// 2 vocales y 2 consonantes
 
-const a = parseInt (prompt ("elige un valor para a"))
-const b = parseInt (prompt ("elige un valor para b"))
-console.log(isNaN(a), isNaN(b))
+const userWord = prompt("introduce una palabra")
 
-if(isNaN (a) ===false && isNaN (b) === false){
-console.log (a,b)
-    if (a > b){
-    console.log("división:", a/b)
-}else if(a < b) {
-    console.log("suma:", a+b)
-}else if (a === b){
-    console.log("multiplicación:", a*b)
-}
+if(userWord.length > 0){
+    let vowels = 0
+    let consonant=0
+    for(i = 0; i < userWord.length; i++){
+        let letras = userWord[i].toLowerCase()
+        if (letras !== " "){
+            if(
+                letras === "a" || 
+                letras === "e" || 
+                letras === "i" || 
+                letras === "o" || 
+                letras === "u"
+                ){    
+            vowels++
+        }else{
+            consonant ++
+        } 
+    }
+    }           
+    console.log( `${vowels} vocales y ${consonant} consonantes`)
 }else{
-    console.error("Algún valor no es tipo number")
-}
-
-
-//for ( i=1; i<=10; i++){
-//template literals console.log ("tabla del" + (i) + ".")//
-//console.log(`tabla del` ${i})
-//for(j = 1 ; j <= 10 ; j++){
-//    console.log(`${i} x ${j} = ${i*j}`)
-//}
-//}
-*/
+    console.log("inserta una palabra valida")   
+} 
+  
+    
+        
+       
+   
